@@ -2,11 +2,16 @@ import { useState } from "react";
 
 const Condicional = () => {
   const [email, setEmail] = useState();
-  const [useremail, setUserEmail] = useState();
+  const [userEmail, setUserEmail] = useState();
 
   function enviarEmail(e) {
     e.preventDefault();
-    console.log(email);
+    setUserEmail(email);
+    console.log(userEmail);
+  }
+
+  function limparEmail() {
+    setUserEmail("");
   }
   return (
     <div>
@@ -20,7 +25,15 @@ const Condicional = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
       </form>
-      <button onClick={enviarEmail}>Enviar Email</button>
+      <button onClick={enviarEmail}>Enviar e-mail</button>
+      {/* vai ser executado depois da função 
+      - renderização com if*/}
+      {userEmail && (
+        <div>
+          <p>o email do usuário é: {userEmail}</p>
+          <button onClick={limparEmail}>Limpar e-mail</button>
+        </div>
+      )}
     </div>
   );
 };
