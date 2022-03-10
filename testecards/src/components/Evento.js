@@ -10,7 +10,7 @@ const Evento = () => {
   return (
     <>
       <p>Clique para disparar um evento</p>
-      <button event={meuEvento} text="primeiro evento" />
+      <Button event={meuEvento} text="primeiro evento" />
       {/* Adiciona a função criada a cima onclick */}
       <button onClick={meuEvento}>Ativar</button>
     </>
