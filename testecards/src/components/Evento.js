@@ -1,4 +1,4 @@
-/* importar botão */
+/* importar botão com props de evento*/
 import Button from "./evento/Button";
 
 /* Exemplo de Eventos */
