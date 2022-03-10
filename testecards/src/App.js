@@ -2,6 +2,8 @@ import "./App.css";
 //import, dar o nome e from
 import HelloWord from "./components/HelloWord";
 import List from "./components/List";
+import Evento from "./components/Evento";
+import Form from "./components/Form";
 
 function App() {
   /* Interpolação de variaveis
@@ -26,6 +28,8 @@ function App() {
       {/* utilizar o componente */}
       <HelloWord />
       <List />
+      <Evento />
+      <Form />
     </div>
   );
 }
