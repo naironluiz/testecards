@@ -4,6 +4,7 @@ import HelloWord from "./components/HelloWord";
 import List from "./components/List";
 import Evento from "./components/Evento";
 import Form from "./components/Form";
+import Condicional from "./components/Condicional";
 
 function App() {
   /* Interpolação de variaveis
@@ -30,6 +31,7 @@ function App() {
       <List />
       <Evento />
       <Form />
+      <Condicional />
     </div>
   );
 }
