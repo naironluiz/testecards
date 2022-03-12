@@ -6,6 +6,10 @@ import Evento from "./components/Evento";
 import Form from "./components/Form";
 import Condicional from "./components/Condicional";
 import OutraLista from "./components/OutraLista";
+/* STATE LIFT */
+import { useState } from "react";
+import SeuNome from "./components/SeuNome";
+/* STATE LIFT */
 
 function App() {
   /* Interpolação de variaveis
@@ -21,7 +25,10 @@ function App() {
 
   /* RENDERIZAÇÃO DE LISTAS */
   const meusItens = ["React", "Vue", "Angular"];
-  /* RENDERIZAÇÃO DE LISTAS */
+  /* RENDERIZAÇÃO DE LISTAS * 
+   /* STATE LIFT  */
+  const [nome, setNome] = useState();
+  /* STATE LIFT  */
 
   return (
     <div className="App">
@@ -40,6 +47,10 @@ function App() {
       <h1>Renderização de Listas</h1>
       <OutraLista itens={meusItens} />
       <OutraLista itens={[]} />
+      <h1>State lift</h1>
+
+      <SeuNome seuNome={setNome} />
+      {nome}
     </div>
   );
 }
