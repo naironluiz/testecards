@@ -18,6 +18,10 @@ function App() {
 
   const url = "https://via.placeholder.com/150";
 
+  /* RENDERIZAÇÃO DE LISTAS */
+  const meusItens = ["React", "Vue", "Angular"];
+  /* RENDERIZAÇÃO DE LISTAS */
+
   return (
     <div className="App">
       <h1>Alterando o JSX</h1>
@@ -32,6 +36,7 @@ function App() {
       <Evento />
       <Form />
       <Condicional />
+      <h1>Renderização de Listas</h1>
     </div>
   );
 }
